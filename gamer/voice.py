@@ -154,7 +154,7 @@ class Voice:
             self._('Deauthenticating {mac}').format(mac=sta['mac']),
             self._('nerf this {mac}').format(mac=sta['mac']),
             self._('greefing {mac}').format(mac=sta['mac']),
-            self._('one shot, one kill/'d {mac}').format(mac=sta['mac']),
+            self._('one shot, one kill {mac}').format(mac=sta['mac']),
             self._('Kickbanning {mac}!').format(mac=sta['mac'])])
 
     def on_handshakes(self, new_shakes):
