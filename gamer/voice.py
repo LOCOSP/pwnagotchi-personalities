@@ -47,6 +47,10 @@ class Voice:
             return self._('Reading last session logs ...')
         else:
             return self._('Read {lines_so_far} log lines so far ...').format(lines_so_far=lines_so_far)
+        
+    def on_uploading(self, target):
+        return self._('Uploading to {target}').format(target=target)
+
 
     def on_bored(self):
         return random.choice([
